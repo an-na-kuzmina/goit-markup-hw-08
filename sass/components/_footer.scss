@@ -1,0 +1,137 @@
+.footer {
+  background-color: $hero-footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+.footer-wrap__footer-contact-block {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  @extend .logo;
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.footer-logo__logo-span {
+  color: $accent-color;
+}
+
+.footer-wrap__footer-social-wrap {
+  margin-right: 93px;
+}
+
+.footer-contact-link {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.footer-contact-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact-link--address-link {
+  color: $white-color;
+  font-style: normal;
+}
+
+.join-social {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-social-list__icon {
+  fill: currentColor;
+}
+
+.footer-form-email {
+  display: flex;
+}
+
+.footer-form-email__input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $hero-footer-color;
+  color: $white-color;
+}
+
+.foooter-form-bnt {
+  @extend %button;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  margin-left: 12px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.foooter-form-bnt__icon {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+}
