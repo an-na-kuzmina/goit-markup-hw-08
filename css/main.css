@@ -25,6 +25,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -66,10 +67,6 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-}
-
-.section-no-padding {
-  padding-top: 0;
 }
 
 /*
@@ -138,6 +135,11 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .feature-list__item {
     margin: 15px;
@@ -147,24 +149,6 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .feature-list__item {
-    margin: 15px;
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-.feature-list__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .feature-list__item:not(:last-child) {
-    margin: 15px;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature-list__item:not(:last-child) {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
@@ -243,6 +227,59 @@ a {
   color: $main-color;
 }
 */
+.about-us-section {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about-us-section {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+.about-us-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.about-us-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-us-list__item {
+  position: relative;
+}
+
+.about-us-list__overlay {
+  position: absolute;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+}
+
 .clients-title {
   margin-bottom: 30px;
   font-size: 28px;
@@ -364,7 +401,7 @@ a {
 @import './components/header';
 @import './components/hero';
 
-@import './components/about-us';
+
 @import './components/team';
 
 @import './components/modal-window';
