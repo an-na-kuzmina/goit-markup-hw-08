@@ -157,14 +157,24 @@
           </ul>
         </div>
       </section>
-      <!--
+
       <section class="section team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__card-item">
-              <img src="./images/igor.jpg" width="270" height="260" alt="Игорь Демьяненко" />
-
+              <picture>
+                <source
+                  srcset="./images/igor-desctop.jpg 1x, ./images/igor-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/igor-tablet.jpg 1x, ./images/igor-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./images/igor-mob.jpg 1x, ./images/igor-mob@2x.jpg 2x" />
+                <img src="./images/igor-mob.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__staff-title">Игорь Демьяненко</h3>
                 <p class="card-content__staff-text" lang="en">Product Designer</p>
@@ -202,7 +212,18 @@
               </div>
             </li>
             <li class="team-list__card-item">
-              <img src="./images/olga.jpg" width="270" height="260" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="./images/olga-desctop.jpg 1x, ./images/olga-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/olga-tablet.jpg 1x, ./images/olga-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./images/olga-mob.jpg 1x, ./images/olga-mob@2x.jpg 2x" />
+                <img src="./images/olga-mob.jpg" alt="Ольга Репина" />
+              </picture>
 
               <div class="card-content">
                 <h3 class="card-content__staff-title">Ольга Репина</h3>
@@ -241,7 +262,18 @@
               </div>
             </li>
             <li class="team-list__card-item">
-              <img src="./images/nikolay.jpg" width="270" height="260" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="./images/nikolay-desctop.jpg 1x, ./images/nikolay-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/nikolay-tablet.jpg 1x, ./images/nikolay-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./images/nikolay-mob.jpg 1x, ./images/nikolay-mob@2x.jpg 2x" />
+                <img src="./images/nikolay-mob.jpg" alt="Николай Тарасов" />
+              </picture>
 
               <div class="card-content">
                 <h3 class="card-content__staff-title">Николай Тарасов</h3>
@@ -280,8 +312,18 @@
               </div>
             </li>
             <li class="team-list__card-item">
-              <img src="./images/mihail.jpg" width="270" height="260" alt="Михаил Ермаков" />
-
+              <picture>
+                <source
+                  srcset="./images/mihail-desctop.jpg 1x, ./images/mihail-desctop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mihail-tablet.jpg 1x, ./images/mihail-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source srcset="./images/mihail-mob.jpg 1x, ./images/mihail-mob@2x.jpg 2x" />
+                <img src="./images/mihail-mob.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__staff-title">Михаил Ермаков</h3>
                 <p class="card-content__staff-text" lang="en">UI Designer</p>
@@ -321,7 +363,7 @@
           </ul>
         </div>
       </section>
-    -->
+
       <section class="section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
