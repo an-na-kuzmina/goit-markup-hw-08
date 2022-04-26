@@ -55,7 +55,7 @@
   text-transform: uppercase;
   color: $white-color;
   @media screen and (min-width: 1200px) {
-    max-width: 695px;
+    min-width: 695px;
     font-size: 44px;
     line-height: 1.36;
   }
