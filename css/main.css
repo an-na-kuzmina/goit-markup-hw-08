@@ -1253,7 +1253,7 @@ a {
 
 .footer-form-email__input {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1262,6 +1262,16 @@ a {
   border-radius: 4px;
   background-color: #2f303a;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer-form-email__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-email__input {
+    width: 358px;
+  }
 }
 
 .foooter-form-bnt {

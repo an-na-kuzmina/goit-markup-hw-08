@@ -152,7 +152,7 @@
 
 .footer-form-email__input {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -160,6 +160,13 @@
   border-radius: 4px;
   background-color: $hero-footer-color;
   color: $white-color;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .foooter-form-bnt {
