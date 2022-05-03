@@ -52,9 +52,9 @@
 
 .project-list {
   @media screen and (min-width: 768px) {
+    margin: calc(-1 * 15px);
     display: flex;
     flex-wrap: wrap;
-    margin: calc(-1 * 15px);
   }
 }
 
@@ -63,6 +63,7 @@
 
   @media screen and (min-width: 768px) {
     margin: 15px;
+
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -84,12 +85,29 @@
   }
 }
 
+.card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .project-list__link {
   display: inline-block;
+
   text-decoration: none;
   background-color: $white-color;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   &:hover,
   &:focus {
     text-decoration: none;
@@ -137,7 +155,9 @@
 
 .project-card {
   padding: 20px 24px;
+
   border: 1px solid $project-border-color;
+  flex-grow: 1;
 }
 
 .project-card__title {
